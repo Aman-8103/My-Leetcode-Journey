@@ -18,6 +18,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Greedy
 |  |
 | ------- |
+| [0455-assign-cookies](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0455-assign-cookies) |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/3014-minimum-number-of-pushes-to-type-word-i) |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/3016-minimum-number-of-pushes-to-type-word-ii) |
 ## Hash Table
@@ -28,6 +29,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [0455-assign-cookies](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0455-assign-cookies) |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/3016-minimum-number-of-pushes-to-type-word-ii) |
 | [3731-find-missing-elements](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/3731-find-missing-elements) |
 ## Counting
@@ -37,6 +39,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0455-assign-cookies](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0455-assign-cookies) |
 | [0486-predict-the-winner](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0486-predict-the-winner) |
 | [0877-stone-game](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0877-stone-game) |
 | [1406-stone-game-iii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1406-stone-game-iii) |
@@ -65,4 +68,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [1406-stone-game-iii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1406-stone-game-iii) |
+## Two Pointers
+|  |
+| ------- |
+| [0455-assign-cookies](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0455-assign-cookies) |
+## Quicksort
+|  |
+| ------- |
+| [0455-assign-cookies](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0455-assign-cookies) |
 <!---LeetCode Topics End-->
