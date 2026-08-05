@@ -76,4 +76,16 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0455-assign-cookies](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0455-assign-cookies) |
+## Depth-First Search
+|  |
+| ------- |
+| [3310-remove-methods-from-project](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/3310-remove-methods-from-project) |
+## Breadth-First Search
+|  |
+| ------- |
+| [3310-remove-methods-from-project](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/3310-remove-methods-from-project) |
+## Graph Theory
+|  |
+| ------- |
+| [3310-remove-methods-from-project](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/3310-remove-methods-from-project) |
 <!---LeetCode Topics End-->
