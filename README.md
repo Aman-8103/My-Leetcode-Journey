@@ -43,6 +43,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [0004-median-of-two-sorted-arrays](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0004-median-of-two-sorted-arrays) |
 | [0455-assign-cookies](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0455-assign-cookies) |
 | [0486-predict-the-winner](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0486-predict-the-winner) |
 | [0877-stone-game](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0877-stone-game) |
@@ -104,4 +105,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3348-smallest-divisible-digit-product-ii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/3348-smallest-divisible-digit-product-ii) |
+## Binary Search
+|  |
+| ------- |
+| [0004-median-of-two-sorted-arrays](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0004-median-of-two-sorted-arrays) |
+## Divide and Conquer
+|  |
+| ------- |
+| [0004-median-of-two-sorted-arrays](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0004-median-of-two-sorted-arrays) |
 <!---LeetCode Topics End-->
