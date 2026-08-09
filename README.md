@@ -8,6 +8,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0486-predict-the-winner](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0486-predict-the-winner) |
 | [0877-stone-game](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0877-stone-game) |
+| [1140-stone-game-ii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1140-stone-game-ii) |
 | [1406-stone-game-iii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1406-stone-game-iii) |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/3014-minimum-number-of-pushes-to-type-word-i) |
 | [3345-smallest-divisible-digit-product-i](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/3345-smallest-divisible-digit-product-i) |
@@ -49,6 +50,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0455-assign-cookies](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0455-assign-cookies) |
 | [0486-predict-the-winner](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0486-predict-the-winner) |
 | [0877-stone-game](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0877-stone-game) |
+| [1140-stone-game-ii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1140-stone-game-ii) |
 | [1406-stone-game-iii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1406-stone-game-iii) |
 | [3731-find-missing-elements](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/3731-find-missing-elements) |
 ## Dynamic Programming
@@ -56,6 +58,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0486-predict-the-winner](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0486-predict-the-winner) |
 | [0877-stone-game](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0877-stone-game) |
+| [1140-stone-game-ii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1140-stone-game-ii) |
 | [1406-stone-game-iii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1406-stone-game-iii) |
 | [3302-find-the-lexicographically-smallest-valid-sequence](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/3302-find-the-lexicographically-smallest-valid-sequence) |
 ## Recursion
@@ -67,14 +70,17 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0486-predict-the-winner](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0486-predict-the-winner) |
 | [0877-stone-game](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0877-stone-game) |
+| [1140-stone-game-ii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1140-stone-game-ii) |
 | [1406-stone-game-iii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1406-stone-game-iii) |
 ## Minimax
 |  |
 | ------- |
+| [1140-stone-game-ii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1140-stone-game-ii) |
 | [1406-stone-game-iii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1406-stone-game-iii) |
 ## Zero-Sum Game
 |  |
 | ------- |
+| [1140-stone-game-ii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1140-stone-game-ii) |
 | [1406-stone-game-iii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1406-stone-game-iii) |
 ## Two Pointers
 |  |
@@ -117,4 +123,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0004-median-of-two-sorted-arrays) |
+## Prefix Sum
+|  |
+| ------- |
+| [1140-stone-game-ii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1140-stone-game-ii) |
 <!---LeetCode Topics End-->
