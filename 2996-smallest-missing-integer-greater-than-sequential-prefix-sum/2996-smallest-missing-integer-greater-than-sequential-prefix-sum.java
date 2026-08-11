@@ -4,10 +4,12 @@ class Solution {
         int prefixsum=arr[0];
 
         for(int i=1;i<n;i++){
-            if(arr[i] != arr[i-1]+1){
+            if(arr[i] == arr[i-1]+1){
+                prefixsum+=arr[i];
+            }else{
                 break;
             }
-            prefixsum+=arr[i];
+            
         }
 
         HashSet<Integer> set=new HashSet<>();
