@@ -4,10 +4,10 @@ class Solution {
         int count=0;
         StringBuilder ans=new StringBuilder();
 
-        for(int i=0;i<n;i++){
-            if(s.charAt(i) == ')')count--;
-            if(count != 0) ans.append(s.charAt(i));
-            if(s.charAt(i) == '(') count++;
+        for(char i:s.toCharArray()){
+            if(i == ')') count--;
+            if(count !=0) ans.append(i);
+            if(i == '(') count++;
         }
         return ans.toString();
         
