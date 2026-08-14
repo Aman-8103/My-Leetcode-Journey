@@ -15,7 +15,7 @@ class Solution {
             int end=i-1;
             reverse(arr,start,end);
             if(result.length() >0) result.append(' ');
-            result.append(arr,start,end-start+1);
+            result.append(new String(arr,start,end-start+1));
 
         }
 
