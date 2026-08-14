@@ -17,6 +17,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## String
 |  |
 | ------- |
+| [1021-remove-outermost-parentheses](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1021-remove-outermost-parentheses) |
 | [2213-longest-substring-of-one-repeating-character](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2213-longest-substring-of-one-repeating-character) |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/3014-minimum-number-of-pushes-to-type-word-i) |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/3016-minimum-number-of-pushes-to-type-word-ii) |
@@ -162,4 +163,12 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [2213-longest-substring-of-one-repeating-character](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2213-longest-substring-of-one-repeating-character) |
+## Stack
+|  |
+| ------- |
+| [1021-remove-outermost-parentheses](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1021-remove-outermost-parentheses) |
+## Bracket Sequences
+|  |
+| ------- |
+| [1021-remove-outermost-parentheses](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1021-remove-outermost-parentheses) |
 <!---LeetCode Topics End-->
