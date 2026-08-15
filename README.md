@@ -61,6 +61,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0004-median-of-two-sorted-arrays](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0004-median-of-two-sorted-arrays) |
 | [0014-longest-common-prefix](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0014-longest-common-prefix) |
+| [0042-trapping-rain-water](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0042-trapping-rain-water) |
 | [0455-assign-cookies](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0455-assign-cookies) |
 | [0486-predict-the-winner](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0486-predict-the-winner) |
 | [0877-stone-game](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0877-stone-game) |
@@ -73,6 +74,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Dynamic Programming
 |  |
 | ------- |
+| [0042-trapping-rain-water](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0042-trapping-rain-water) |
 | [0486-predict-the-winner](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0486-predict-the-winner) |
 | [0877-stone-game](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0877-stone-game) |
 | [1140-stone-game-ii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1140-stone-game-ii) |
@@ -106,6 +108,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Two Pointers
 |  |
 | ------- |
+| [0042-trapping-rain-water](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0042-trapping-rain-water) |
 | [0151-reverse-words-in-a-string](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0151-reverse-words-in-a-string) |
 | [0455-assign-cookies](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0455-assign-cookies) |
 | [3302-find-the-lexicographically-smallest-valid-sequence](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/3302-find-the-lexicographically-smallest-valid-sequence) |
@@ -173,6 +176,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Stack
 |  |
 | ------- |
+| [0042-trapping-rain-water](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0042-trapping-rain-water) |
 | [1021-remove-outermost-parentheses](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1021-remove-outermost-parentheses) |
 ## Bracket Sequences
 |  |
@@ -182,4 +186,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0014-longest-common-prefix](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0014-longest-common-prefix) |
+## Monotonic Stack
+|  |
+| ------- |
+| [0042-trapping-rain-water](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0042-trapping-rain-water) |
 <!---LeetCode Topics End-->
