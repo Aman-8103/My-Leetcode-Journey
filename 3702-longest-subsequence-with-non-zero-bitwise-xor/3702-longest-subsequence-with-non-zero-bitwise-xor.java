@@ -2,18 +2,18 @@ class Solution {
     public int longestSubsequence(int[] arr) {
         int n=arr.length;
         int xor=0;
-        boolean zero=true;
+        int zero=0;
 
         for(int i:arr){
             xor^=i;
-
-            if(i != 0){
-                zero=false;
+            if(i == 0){
+                zero++;
             }
         }
 
-        if(zero) return 0;
+        if(zero == n) return 0;
+        if(xor != 0) return n;
         
-        return (xor==0)? n-1:n;
+        return n-1;
     }
 }
