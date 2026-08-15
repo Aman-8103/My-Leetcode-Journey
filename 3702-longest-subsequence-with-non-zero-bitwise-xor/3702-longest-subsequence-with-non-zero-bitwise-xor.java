@@ -11,8 +11,10 @@ class Solution {
             }
         }
 
-        if(zero == n) return 0;
         if(xor != 0) return n;
+        else{
+            if(zero == n) return 0;
+        }
         
         return n-1;
     }
