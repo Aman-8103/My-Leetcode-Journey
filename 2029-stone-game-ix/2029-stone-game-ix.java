@@ -1,0 +1,14 @@
+class Solution {
+    public boolean stoneGameIX(int[] stones) {
+        int n=stones.length;
+        int[] count=new int[3];
+        for(int i:stones){
+            count[i%3]++;
+        }
+        if(count[0]%2 ==0){
+            return Math.min(count[1],count[2]) > 0;
+        }
+        
+        return Math.abs(count[1] - count[2]) > 2;
+    }
+}
