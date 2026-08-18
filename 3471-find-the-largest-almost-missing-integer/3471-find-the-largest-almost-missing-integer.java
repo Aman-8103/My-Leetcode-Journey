@@ -21,32 +21,15 @@ class Solution {
             return max;
         }
         
-        int first=arr[0];
-        int last=arr[n-1];
+        int start=arr[0];
+        int end=arr[n-1];
 
-        if(first==last) return -1;
-        boolean firstvalid=true;
-        boolean lastvalid=true;
-
-        for (int i=1; i<n; i++) {
-            if (arr[i]==first) {
-                firstvalid=false;
-            }
+        if(start==end) return -1;
+        
+        for(int i=1;i<n-1;i++){
+            if(arr[i] == start) start=-1;
+            if(arr[i] == end) end=-1;
         }
-        for (int i=0; i<n-1; i++) {
-            if (arr[i]==last) {
-                lastvalid=false;
-            }
-        }
-
-        if(firstvalid && lastvalid){
-            return Math.max(first,last);
-        }else if(firstvalid){
-            return first;
-        }else if(lastvalid){
-            return last;
-        }
-
-        return -1;
+        return Math.max(start,end);
     }
 }
