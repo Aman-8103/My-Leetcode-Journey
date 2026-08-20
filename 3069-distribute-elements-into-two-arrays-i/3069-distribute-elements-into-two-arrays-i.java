@@ -7,24 +7,19 @@ class Solution {
         arr2.add(arr[1]);
 
         int index=2;
-        int i=0,j=0;
         while(index < n){
-            if(arr1.get(i) > arr2.get(j)){
+            if(arr1.get(arr1.size()-1) > arr2.get(arr2.size()-1)){
                 arr1.add(arr[index]);
-                i++;
             }else{
                 arr2.add(arr[index]);
-                j++;
             }
             index++;
         }
-        ArrayList<Integer> result=new ArrayList<>(arr1);
-        result.addAll(arr2);
+        arr1.addAll(arr2);
 
-        int[] merge=new int[result.size()];
-        for(i=0;i<result.size();i++){
-            merge[i]=result.get(i);
+        for(int i=0;i<arr1.size();i++){
+            arr[i]=arr1.get(i);
         }
-        return merge;
+        return arr;
     }
 }
