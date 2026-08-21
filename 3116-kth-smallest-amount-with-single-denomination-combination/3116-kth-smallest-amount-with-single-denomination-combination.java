@@ -1,67 +1,67 @@
 import java.util.Arrays;
 
 public class Solution {
+
+    private static final int MAX_SUBSETS = 32768;
+    private final long[] packedSubsets = new long[MAX_SUBSETS * 2];
+    private int subsetCount = 0;
+
     public long findKthSmallest(int[] coins, int k) {
-        // Sort coins to potentially exit early in our bitmask combinations
         Arrays.sort(coins);
         
-        // Define binary search boundaries
         long low = 1;
-        // The maximum upper bound is using the smallest coin k times
         long high = (long) coins[0] * k;
+        
+        // Reset global counter for clean LeetCode test suite isolation
+        subsetCount = 0;
+        
+        // Generate pre-filtered items using primitives
+        generateSubsets(coins, 0, 1, 0, high);
+        
         long ans = high;
-
         while (low <= high) {
             long mid = low + (high - low) / 2;
 
-            if (countMultiples(coins, mid) >= k) {
+            if (countMultiples(mid) >= k) {
                 ans = mid;
-                high = mid - 1; // Try to find a smaller valid amount
+                high = mid - 1;
             } else {
-                low = mid + 1; // Increase amount boundary
+                low = mid + 1;
             }
         }
         return ans;
     }
 
-    // Counts how many valid amounts <= maxAmount can be formed
-    private long countMultiples(int[] coins, long maxAmount) {
+    private void generateSubsets(int[] coins, int index, long currentLcm, int count, long maxLimit) {
+        if (index == coins.length) {
+            if (count > 0) {
+                // Store LCM and Sign directly into adjacent slots of the primitive array
+                packedSubsets[subsetCount++] = currentLcm;
+                packedSubsets[subsetCount++] = (count % 2 == 1) ? 1 : -1;
+            }
+            return;
+        }
+
+        // Branch 1: Skip current coin
+        generateSubsets(coins, index + 1, currentLcm, count, maxLimit);
+
+        // Branch 2: Take current coin (with inline overflow pruning)
+        long g = gcd(currentLcm, coins[index]);
+        if (currentLcm / g <= maxLimit / coins[index]) {
+            generateSubsets(coins, index + 1, (currentLcm / g) * coins[index], count + 1, maxLimit);
+        }
+    }
+
+    // High performance sequential execution using raw arrays
+    private long countMultiples(long mid) {
         long count = 0;
-        int n = coins.length;
-        int totalSubsets = 1 << n; // 2^n total subsets
-
-        // Bitmask from 1 to 2^n - 1 to look at every non-empty combination of coins
-        for (int mask = 1; mask < totalSubsets; mask++) {
-            long currentLcm = 1;
-            int elementsInSubset = 0;
-            boolean overflow = false;
-
-            for (int i = 0; i < n; i++) {
-                if ((mask & (1 << i)) != 0) {
-                    elementsInSubset++;
-                    currentLcm = lcm(currentLcm, coins[i]);
-                    
-                    // If LCM exceeds maxAmount, its multiple count will be 0 anyway
-                    if (currentLcm > maxAmount) {
-                        overflow = true;
-                        break;
-                    }
-                }
-            }
-
-            if (overflow) continue;
-
-            // Inclusion-Exclusion Principle logic
-            if (elementsInSubset % 2 == 1) {
-                count += maxAmount / currentLcm; // Odd size: add
-            } else {
-                count -= maxAmount / currentLcm; // Even size: subtract
-            }
+        // Step by 2 to process both elements of the packed configuration 
+        for (int i = 0; i < subsetCount; i += 2) {
+            count += (mid / packedSubsets[i]) * packedSubsets[i + 1];
         }
         return count;
     }
 
-    // Helper to calculate Greatest Common Divisor (GCD)
     private long gcd(long a, long b) {
         while (b != 0) {
             long temp = b;
@@ -69,10 +69,5 @@ public class Solution {
             a = temp;
         }
         return a;
-    }
-
-    // Helper to calculate Least Common Multiple (LCM)
-    private long lcm(long a, long b) {
-        return (a / gcd(a, b)) * b;
     }
 }
