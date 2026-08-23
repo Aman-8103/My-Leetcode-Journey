@@ -1,24 +1,25 @@
 class Solution {
     public boolean sumGame(String num) {
         int n=num.length();
+        char[] arr=num.toCharArray();
+        int half=n/2;
+
         int leftsum=0,rightsum=0;
         int leftq=0,rightq=0;
 
-        for(int i=0;i<n/2;i++){
-            char ch=num.charAt(i);
-            if(ch == '?'){
+        for(int i=0;i<half;i++){
+            if(arr[i] == '?'){
                 leftq++;
             }else{
-                leftsum+=ch-'0';
+                leftsum+=arr[i]-'0';
             }
         }
 
-        for(int i=n/2;i<n;i++){
-            char ch=num.charAt(i);
-            if(ch == '?'){
+        for(int i=half;i<n;i++){
+            if(arr[i] == '?'){
                 rightq++;
             }else{
-                rightsum+=ch-'0';
+                rightsum+=arr[i]-'0';
             }
         }
 
