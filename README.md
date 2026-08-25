@@ -50,6 +50,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Hash Table
 |  |
 | ------- |
+| [0645-set-mismatch](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0645-set-mismatch) |
 | [1386-cinema-seat-allocation](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1386-cinema-seat-allocation) |
 | [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2958-length-of-longest-subarray-with-at-most-k-frequency) |
 | [2996-smallest-missing-integer-greater-than-sequential-prefix-sum](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2996-smallest-missing-integer-greater-than-sequential-prefix-sum) |
@@ -63,6 +64,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0215-kth-largest-element-in-an-array) |
 | [0455-assign-cookies](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0455-assign-cookies) |
+| [0645-set-mismatch](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0645-set-mismatch) |
 | [2996-smallest-missing-integer-greater-than-sequential-prefix-sum](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2996-smallest-missing-integer-greater-than-sequential-prefix-sum) |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/3016-minimum-number-of-pushes-to-type-word-ii) |
 | [3731-find-missing-elements](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/3731-find-missing-elements) |
@@ -81,6 +83,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0455-assign-cookies](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0455-assign-cookies) |
 | [0485-max-consecutive-ones](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0485-max-consecutive-ones) |
 | [0486-predict-the-winner](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0486-predict-the-winner) |
+| [0645-set-mismatch](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0645-set-mismatch) |
 | [0877-stone-game](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0877-stone-game) |
 | [1140-stone-game-ii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1140-stone-game-ii) |
 | [1386-cinema-seat-allocation](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1386-cinema-seat-allocation) |
@@ -236,6 +239,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Bit Manipulation
 |  |
 | ------- |
+| [0645-set-mismatch](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0645-set-mismatch) |
 | [1386-cinema-seat-allocation](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1386-cinema-seat-allocation) |
 | [3116-kth-smallest-amount-with-single-denomination-combination](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/3116-kth-smallest-amount-with-single-denomination-combination) |
 | [3702-longest-subsequence-with-non-zero-bitwise-xor](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/3702-longest-subsequence-with-non-zero-bitwise-xor) |
