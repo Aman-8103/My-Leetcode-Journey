@@ -84,6 +84,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1140-stone-game-ii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1140-stone-game-ii) |
 | [1386-cinema-seat-allocation](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1386-cinema-seat-allocation) |
 | [1406-stone-game-iii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1406-stone-game-iii) |
+| [1470-shuffle-the-array](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1470-shuffle-the-array) |
 | [1563-stone-game-v](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1563-stone-game-v) |
 | [1872-stone-game-viii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1872-stone-game-viii) |
 | [1929-concatenation-of-array](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1929-concatenation-of-array) |
