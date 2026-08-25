@@ -86,6 +86,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1406-stone-game-iii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1406-stone-game-iii) |
 | [1563-stone-game-v](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1563-stone-game-v) |
 | [1872-stone-game-viii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1872-stone-game-viii) |
+| [1929-concatenation-of-array](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1929-concatenation-of-array) |
 | [2029-stone-game-ix](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2029-stone-game-ix) |
 | [2213-longest-substring-of-one-repeating-character](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2213-longest-substring-of-one-repeating-character) |
 | [2958-length-of-longest-subarray-with-at-most-k-frequency](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2958-length-of-longest-subarray-with-at-most-k-frequency) |
@@ -247,6 +248,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Simulation
 |  |
 | ------- |
+| [1929-concatenation-of-array](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1929-concatenation-of-array) |
 | [3069-distribute-elements-into-two-arrays-i](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/3069-distribute-elements-into-two-arrays-i) |
 ## Combinatorics
 |  |
