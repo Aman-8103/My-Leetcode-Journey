@@ -4,7 +4,10 @@ class Solution {
         ArrayList<Integer> ans=new ArrayList<>();
 
         for(int i=1;i<n-1;i++){
-            if((arr[i-1]<arr[i]) && (arr[i]>arr[i+1]) ) ans.add(i);
+            if((arr[i-1]<arr[i]) && (arr[i]>arr[i+1]) ){
+                ans.add(i);
+                i++;
+            }
         }
         return ans;
     }
