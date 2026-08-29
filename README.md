@@ -93,6 +93,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0035-search-insert-position](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0035-search-insert-position) |
 | [0042-trapping-rain-water](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0042-trapping-rain-water) |
+| [0081-search-in-rotated-sorted-array-ii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [0215-kth-largest-element-in-an-array](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0215-kth-largest-element-in-an-array) |
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
 | [0455-assign-cookies](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0455-assign-cookies) |
@@ -210,6 +211,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0033-search-in-rotated-sorted-array](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0033-search-in-rotated-sorted-array) |
 | [0034-find-first-and-last-position-of-element-in-sorted-array](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0034-find-first-and-last-position-of-element-in-sorted-array) |
 | [0035-search-insert-position](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0035-search-insert-position) |
+| [0081-search-in-rotated-sorted-array-ii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0081-search-in-rotated-sorted-array-ii) |
 | [3116-kth-smallest-amount-with-single-denomination-combination](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/3116-kth-smallest-amount-with-single-denomination-combination) |
 ## Divide and Conquer
 |  |
