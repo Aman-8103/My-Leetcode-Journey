@@ -20,9 +20,9 @@ class Solution {
     }
     boolean counthrs(int[] piles,int hourly,int h){
         long totalhrs=0;
-        
+
         for(int i=0;i<piles.length;i++){
-            totalhrs+=Math.ceil((double)piles[i]/(double)hourly);
+            totalhrs+=(piles[i] + hourly - 1)/hourly;
             if(totalhrs > h) return false;
         }
         return true;
