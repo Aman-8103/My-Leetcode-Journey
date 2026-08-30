@@ -46,6 +46,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1903-largest-odd-number-in-string](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1903-largest-odd-number-in-string) |
 | [1927-sum-game](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1927-sum-game) |
 | [2029-stone-game-ix](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2029-stone-game-ix) |
+| [2091-removing-minimum-and-maximum-from-array](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2091-removing-minimum-and-maximum-from-array) |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/3014-minimum-number-of-pushes-to-type-word-i) |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/3016-minimum-number-of-pushes-to-type-word-ii) |
 | [3302-find-the-lexicographically-smallest-valid-sequence](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/3302-find-the-lexicographically-smallest-valid-sequence) |
@@ -115,6 +116,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1872-stone-game-viii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1872-stone-game-viii) |
 | [1929-concatenation-of-array](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1929-concatenation-of-array) |
 | [2029-stone-game-ix](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2029-stone-game-ix) |
+| [2091-removing-minimum-and-maximum-from-array](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2091-removing-minimum-and-maximum-from-array) |
 | [2213-longest-substring-of-one-repeating-character](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2213-longest-substring-of-one-repeating-character) |
 | [2948-make-lexicographically-smallest-array-by-swapping-elements](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2948-make-lexicographically-smallest-array-by-swapping-elements) |
 | [2951-find-the-peaks](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2951-find-the-peaks) |
