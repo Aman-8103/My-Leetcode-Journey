@@ -16,9 +16,13 @@ class Solution {
                 maxidx=i;
             }
         }
-        int leftremove=Math.max(minidx,maxidx)+1;
-        int rightremove=n-Math.min(minidx,maxidx);
-        int both=(Math.min(minidx,maxidx)+1) +(n-Math.max(minidx,maxidx));
+        int first=Math.min(minidx,maxidx);
+        int second=Math.max(minidx,maxidx);
+
+        int leftremove=second+1;
+        int rightremove=n-first;
+        int both=(first+1) +(n-second);
+
         return Math.min(Math.min(leftremove,rightremove),both);
         
     }
