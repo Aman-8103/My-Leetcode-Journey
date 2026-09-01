@@ -5,9 +5,9 @@ class Solution {
 
         int min=Integer.MAX_VALUE;
         int max=Integer.MIN_VALUE;
-        for(int i=0;i<n;i++){
-            min=Math.min(bloomDay[i],min);
-            max=Math.max(bloomDay[i],max);
+        for(int i:bloomDay){
+            min=Math.min(i,min);
+            max=Math.max(i,max);
         }
 
         int low=min,high=max;
