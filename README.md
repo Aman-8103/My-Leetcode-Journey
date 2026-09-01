@@ -115,6 +115,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1386-cinema-seat-allocation](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1386-cinema-seat-allocation) |
 | [1406-stone-game-iii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1406-stone-game-iii) |
 | [1470-shuffle-the-array](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1470-shuffle-the-array) |
+| [1482-minimum-number-of-days-to-make-m-bouquets](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1482-minimum-number-of-days-to-make-m-bouquets) |
 | [1563-stone-game-v](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1563-stone-game-v) |
 | [1872-stone-game-viii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1872-stone-game-viii) |
 | [1929-concatenation-of-array](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1929-concatenation-of-array) |
@@ -230,6 +231,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0162-find-peak-element](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0162-find-peak-element) |
 | [0540-single-element-in-a-sorted-array](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0540-single-element-in-a-sorted-array) |
 | [0875-koko-eating-bananas](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0875-koko-eating-bananas) |
+| [1482-minimum-number-of-days-to-make-m-bouquets](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1482-minimum-number-of-days-to-make-m-bouquets) |
 | [3116-kth-smallest-amount-with-single-denomination-combination](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/3116-kth-smallest-amount-with-single-denomination-combination) |
 ## Divide and Conquer
 |  |
