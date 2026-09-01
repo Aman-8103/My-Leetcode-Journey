@@ -1,7 +1,7 @@
 class Solution {
     public int minDays(int[] bloomDay, int m, int k) {
         int n=bloomDay.length;
-        if((long)n < (long)(m*k)) return -1;
+        if((long)n < (long)m*k) return -1;
 
         int min=Integer.MAX_VALUE;
         int max=Integer.MIN_VALUE;
@@ -9,7 +9,7 @@ class Solution {
             min=Math.min(i,min);
             max=Math.max(i,max);
         }
-        
+
         int low=min,high=max;
         int ans=-1;
         while(low<=high){
@@ -24,7 +24,7 @@ class Solution {
         return ans;     
     }
 
-    boolean possible(int[] arr,long day,int m,int k){
+    boolean possible(int[] arr,int day,int m,int k){
         int count=0;
         int n_bouq=0;
 
