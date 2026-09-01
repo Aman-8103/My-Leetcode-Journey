@@ -5,9 +5,9 @@ class Solution {
 
         int min=Integer.MAX_VALUE;
         int max=Integer.MIN_VALUE;
-        for(int i:bloomDay){
-            min=Math.min(i,min);
-            max=Math.max(i,max);
+        for(int i=0;i<n;i++){
+            min=Math.min(bloomDay[i],min);
+            max=Math.max(bloomDay[i],max);
         }
 
         int low=min,high=max;
@@ -29,7 +29,7 @@ class Solution {
         int n_bouq=0;
 
         for(int i=0;i<arr.length;i++){
-            if(day >= arr[i]){
+            if(arr[i] <= day){
                 count++;
             }else{
                 n_bouq+=(count/k);
