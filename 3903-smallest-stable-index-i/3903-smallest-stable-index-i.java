@@ -1,4 +1,5 @@
 class Solution {
+
     public int firstStableIndex(int[] arr, int k) {
         int n=arr.length;
 
@@ -12,7 +13,7 @@ class Solution {
         for(int i=0;i<n;i++){ //normal compute max and subtract with premin[i];
             max=Math.max(arr[i],max);
             int min=premin[i];
-            
+
             if(max-min <= k) return i;
         }
         return -1;
