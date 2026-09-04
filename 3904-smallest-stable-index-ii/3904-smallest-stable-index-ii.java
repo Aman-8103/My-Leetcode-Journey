@@ -10,7 +10,7 @@ class Solution {
 
         int max=arr[0];
         for(int i=0;i<n;i++){ //normal compute max and subtract with premin[i];
-            max=Math.max(arr[i],max);
+            if(arr[i] > max) max=arr[i];
             int min=premin[i];
 
             if(max-min <= k) return i;
