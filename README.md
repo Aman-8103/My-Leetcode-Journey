@@ -31,6 +31,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0014-longest-common-prefix](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0014-longest-common-prefix) |
 | [0115-distinct-subsequences](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0115-distinct-subsequences) |
 | [0151-reverse-words-in-a-string](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0151-reverse-words-in-a-string) |
+| [0940-distinct-subsequences-ii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0940-distinct-subsequences-ii) |
 | [1021-remove-outermost-parentheses](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1021-remove-outermost-parentheses) |
 | [1903-largest-odd-number-in-string](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1903-largest-odd-number-in-string) |
 | [1927-sum-game](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1927-sum-game) |
@@ -154,6 +155,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0410-split-array-largest-sum](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0410-split-array-largest-sum) |
 | [0486-predict-the-winner](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0486-predict-the-winner) |
 | [0877-stone-game](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0877-stone-game) |
+| [0940-distinct-subsequences-ii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0940-distinct-subsequences-ii) |
 | [1140-stone-game-ii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1140-stone-game-ii) |
 | [1406-stone-game-iii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1406-stone-game-iii) |
 | [1510-stone-game-iv](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1510-stone-game-iv) |
