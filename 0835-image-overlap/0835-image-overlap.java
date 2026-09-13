@@ -11,17 +11,26 @@ class Solution {
             }
         }
 
-        HashMap<Integer,Integer> map=new HashMap<>();
-        int maxoverlap=0;
-
-        for(int p1:one1){
-            for(int p2:one2){
-                int diff=p1-p2;
-                map.put(diff, map.getOrDefault(diff,0)+1);
+       int[] counts = new int[3600];
+        int maxoverlap = 0;
+        
+        // Step 3: Count shift frequencies using fast primitive array operations
+        for (int p1 : one1) {
+            int r1 = p1 / 100;
+            int c1 = p1 % 100;
+            
+            for (int p2 : one2) {
+                int r2 = p2 / 100;
+                int c2 = p2 % 100;
+                
+                // Map 2D shift safely to a positive unique array index
+                int index = (r1 - r2 + 30) * 60 + (c1 - c2 + 30);
+                
+                counts[index]++;
+                if (counts[index] > maxoverlap) {
+                    maxoverlap = counts[index];
+                }
             }
-        }
-        for(int count:map.values()){
-            maxoverlap=Math.max(maxoverlap,count);
         }
 
         return maxoverlap;
