@@ -118,6 +118,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0486-predict-the-winner](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0486-predict-the-winner) |
 | [0540-single-element-in-a-sorted-array](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0540-single-element-in-a-sorted-array) |
 | [0645-set-mismatch](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0645-set-mismatch) |
+| [0835-image-overlap](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0835-image-overlap) |
 | [0875-koko-eating-bananas](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0875-koko-eating-bananas) |
 | [0877-stone-game](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0877-stone-game) |
 | [0904-fruit-into-baskets](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0904-fruit-into-baskets) |
@@ -365,6 +366,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Matrix
 |  |
 | ------- |
+| [0835-image-overlap](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0835-image-overlap) |
 | [3568-minimum-moves-to-clean-the-classroom](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/3568-minimum-moves-to-clean-the-classroom) |
 ## Tree
 |  |
