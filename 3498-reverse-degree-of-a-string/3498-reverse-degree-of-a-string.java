@@ -4,10 +4,10 @@ class Solution {
         int sum=0;
 
         for(int i=0;i<n;i++){
-            int index=s.charAt(i)-'a';
-            int reverse=26-index;
+            int reverse=26-(s.charAt(i)-'a');
             sum+=reverse*(i+1);
         }
+        
         return sum;
     }
 
