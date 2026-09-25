@@ -1,69 +1,62 @@
-import java.util.*;
-
 class Solution {
     public List<String> braceExpansionII(String expression) {
-        Stack<Object> stack = new Stack<>();
-        int i = 0;
-        int n = expression.length();
-        
-        while (i < n) {
-            char c = expression.charAt(i);
-            
-            if (c == '{' || c == ',') {
-                stack.push(c);
-                i++;
-            } else if (c == '}') {
-                // 1. Process all elements up to the matching '{'
-                List<TreeSet<String>> list = new ArrayList<>();
-                while (!stack.isEmpty() && !stack.peek().equals('{')) {
-                    Object val = stack.pop();
-                    if (val instanceof TreeSet) {
-                        list.add((TreeSet<String>) val);
-                    }
-                    // Skip commas, they are handled by grouping the list
-                }
-                if (!stack.isEmpty()) stack.pop(); // Remove '{'
-                
-                // 2. Merge elements separated by commas (Union operation)
-                TreeSet<String> merged = new TreeSet<>();
-                for (TreeSet<String> set : list) {
-                    merged.addAll(set);
-                }
-                
-                // 3. Concatenate with the preceding set if it's a word/set (Cartesian Product)
-                autoCombine(stack, merged);
-                i++;
-            } else {
-                // Parse consecutive alphabetic characters as a single word
-                StringBuilder sb = new StringBuilder();
-                while (i < n && Character.isLetter(expression.charAt(i))) {
-                    sb.append(expression.charAt(i));
-                    i++;
-                }
-                TreeSet<String> current = new TreeSet<>();
-                current.add(sb.toString());
-                
-                // Concatenate with preceding set if applicable
-                autoCombine(stack, current);
-            }
-        }
-        
-        // The remaining element on the stack is our final combined, sorted set
-        return new ArrayList<>((TreeSet<String>) stack.pop());
+        return new ArrayList<>(parse(expression, 0).set);
     }
-    
-    private void autoCombine(Stack<Object> stack, TreeSet<String> current) {
-        if (!stack.isEmpty() && stack.peek() instanceof TreeSet) {
-            TreeSet<String> prev = (TreeSet<String>) stack.pop();
-            TreeSet<String> combined = new TreeSet<>();
-            for (String p : prev) {
-                for (String c : current) {
-                    combined.add(p + c);
-                }
-            }
-            stack.push(combined);
-        } else {
-            stack.push(current);
+
+    private static class Result {
+        Set<String> set;
+        int index;
+
+        Result(Set<String> set, int index) {
+            this.set = set;
+            this.index = index;
         }
+    }
+
+    private Result parse(String s, int index) {
+        Set<String> result = new TreeSet<>();
+        Set<String> current = new TreeSet<>();
+        current.add("");
+
+        while (index < s.length() && s.charAt(index) != '}') {
+            if (s.charAt(index) == '{') {
+                Result sub = parse(s, index + 1);
+                index = sub.index + 1;
+                current = multiply(current, sub.set);
+            } else if (s.charAt(index) == ',') {
+                result.addAll(current);
+                current = new TreeSet<>();
+                current.add("");
+                index++;
+            } else {
+                StringBuilder word = new StringBuilder();
+
+                while (index < s.length() &&
+                       Character.isLetter(s.charAt(index))) {
+                    word.append(s.charAt(index));
+                    index++;
+                }
+
+                Set<String> wordSet = new TreeSet<>();
+                wordSet.add(word.toString());
+
+                current = multiply(current, wordSet);
+            }
+        }
+
+        result.addAll(current);
+        return new Result(result, index);
+    }
+
+    private Set<String> multiply(Set<String> a, Set<String> b) {
+        Set<String> result = new TreeSet<>();
+
+        for (String x : a) {
+            for (String y : b) {
+                result.add(x + y);
+            }
+        }
+
+        return result;
     }
 }
