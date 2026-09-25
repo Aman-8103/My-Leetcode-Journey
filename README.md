@@ -41,6 +41,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0151-reverse-words-in-a-string](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0151-reverse-words-in-a-string) |
 | [0940-distinct-subsequences-ii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0940-distinct-subsequences-ii) |
 | [1021-remove-outermost-parentheses](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1021-remove-outermost-parentheses) |
+| [1096-brace-expansion-ii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1096-brace-expansion-ii) |
 | [1520-maximum-number-of-non-overlapping-substrings](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1520-maximum-number-of-non-overlapping-substrings) |
 | [1903-largest-odd-number-in-string](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1903-largest-odd-number-in-string) |
 | [1927-sum-game](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1927-sum-game) |
@@ -78,6 +79,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
 | [0645-set-mismatch](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0645-set-mismatch) |
 | [0904-fruit-into-baskets](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0904-fruit-into-baskets) |
+| [1096-brace-expansion-ii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1096-brace-expansion-ii) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 | [1386-cinema-seat-allocation](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1386-cinema-seat-allocation) |
 | [1477-find-two-non-overlapping-sub-arrays-each-with-target-sum](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1477-find-two-non-overlapping-sub-arrays-each-with-target-sum) |
@@ -99,6 +101,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0215-kth-largest-element-in-an-array](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0215-kth-largest-element-in-an-array) |
 | [0455-assign-cookies](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0455-assign-cookies) |
 | [0645-set-mismatch](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0645-set-mismatch) |
+| [1096-brace-expansion-ii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1096-brace-expansion-ii) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
 | [1520-maximum-number-of-non-overlapping-substrings](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1520-maximum-number-of-non-overlapping-substrings) |
 | [2948-make-lexicographically-smallest-array-by-swapping-elements](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2948-make-lexicographically-smallest-array-by-swapping-elements) |
@@ -249,6 +252,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Breadth-First Search
 |  |
 | ------- |
+| [1096-brace-expansion-ii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1096-brace-expansion-ii) |
 | [3310-remove-methods-from-project](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/3310-remove-methods-from-project) |
 | [3568-minimum-moves-to-clean-the-classroom](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/3568-minimum-moves-to-clean-the-classroom) |
 ## Graph Theory
@@ -266,6 +270,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Backtracking
 |  |
 | ------- |
+| [1096-brace-expansion-ii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1096-brace-expansion-ii) |
 | [3348-smallest-divisible-digit-product-ii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/3348-smallest-divisible-digit-product-ii) |
 ## Number Theory
 |  |
@@ -342,6 +347,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0042-trapping-rain-water](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0042-trapping-rain-water) |
 | [1021-remove-outermost-parentheses](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1021-remove-outermost-parentheses) |
+| [1096-brace-expansion-ii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1096-brace-expansion-ii) |
 ## Bracket Sequences
 |  |
 | ------- |
