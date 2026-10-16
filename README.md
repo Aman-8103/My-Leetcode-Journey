@@ -84,6 +84,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2091-removing-minimum-and-maximum-from-array](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2091-removing-minimum-and-maximum-from-array) |
 | [2333-minimum-sum-of-squared-difference](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2333-minimum-sum-of-squared-difference) |
 | [2472-maximum-number-of-non-overlapping-palindrome-substrings](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2472-maximum-number-of-non-overlapping-palindrome-substrings) |
+| [2530-maximal-score-after-applying-k-operations](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2530-maximal-score-after-applying-k-operations) |
 | [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2897-apply-operations-on-array-to-maximize-sum-of-squares) |
 | [3014-minimum-number-of-pushes-to-type-word-i](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/3014-minimum-number-of-pushes-to-type-word-i) |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/3016-minimum-number-of-pushes-to-type-word-ii) |
@@ -185,6 +186,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2213-longest-substring-of-one-repeating-character](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2213-longest-substring-of-one-repeating-character) |
 | [2267-check-if-there-is-a-valid-parentheses-string-path](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2267-check-if-there-is-a-valid-parentheses-string-path) |
 | [2333-minimum-sum-of-squared-difference](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2333-minimum-sum-of-squared-difference) |
+| [2530-maximal-score-after-applying-k-operations](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2530-maximal-score-after-applying-k-operations) |
 | [2778-sum-of-squares-of-special-elements](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2778-sum-of-squares-of-special-elements) |
 | [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2897-apply-operations-on-array-to-maximize-sum-of-squares) |
 | [2913-subarrays-distinct-element-sum-of-squares-i](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2913-subarrays-distinct-element-sum-of-squares-i) |
@@ -436,6 +438,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0215-kth-largest-element-in-an-array) |
 | [2333-minimum-sum-of-squared-difference](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2333-minimum-sum-of-squared-difference) |
+| [2530-maximal-score-after-applying-k-operations](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2530-maximal-score-after-applying-k-operations) |
 ## Quickselect
 |  |
 | ------- |
