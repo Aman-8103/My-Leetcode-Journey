@@ -8,7 +8,12 @@ class Solution {
         for(int i=0;i<k;i++){
             int num=maxheap.poll();
             score+=num;
-            maxheap.add((num+2)/3);
+            
+            if(num%3==0){
+                maxheap.add(num/3);
+            }else{
+                maxheap.add((num/3)+1);
+            }
         }
 
         return score;
