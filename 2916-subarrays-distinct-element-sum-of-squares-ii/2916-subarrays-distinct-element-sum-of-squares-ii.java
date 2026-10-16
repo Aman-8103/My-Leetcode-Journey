@@ -1,67 +1,88 @@
+import java.util.Arrays;
 
-class Solution {
-    static final long MOD = 1_000_000_007L;
-
-    long[] sum, sq, lazy;
-    int n;
+public class Solution {
+    private static final int MOD = 1_000_000_007;
 
     public int sumCounts(int[] nums) {
-        n = nums.length;
-        sum = new long[4 * n];
-        sq = new long[4 * n];
-        lazy = new long[4 * n];
+        int n = nums.length;
+        
+        // Statically sized flat arrays for optimal CPU cache performance
+        long[] sum = new long[4 * n];
+        long[] sumSquares = new long[4 * n];
+        long[] lazy = new long[4 * n];
 
-        int[] last = new int[100001];
-        java.util.Arrays.fill(last, -1);
-
-        long ans = 0;
-
+        // Find the maximum value to size the lastSeen tracking array precisely
+        int maxVal = 0;
         for (int i = 0; i < n; i++) {
-            int prev = last[nums[i]];
-            update(1, 0, n - 1, prev + 1, i);
-            ans = (ans + sq[1]) % MOD;
-            last[nums[i]] = i;
+            if (nums[i] > maxVal) {
+                maxVal = nums[i];
+            }
+        }
+        
+        int[] lastSeen = new int[maxVal + 1];
+        Arrays.fill(lastSeen, -1);
+
+        long runningAns = 0;
+
+        for (int r = 0; r < n; r++) {
+            int val = nums[r];
+            int l = lastSeen[val] + 1;
+            lastSeen[val] = r;
+
+            // Update the range [l, r] in O(log N)
+            update(1, 0, n - 1, l, r, 1, sum, sumSquares, lazy);
+            
+            // Accumulate the current result from the root node (index 1)
+            runningAns = (runningAns + sumSquares[1]) % MOD;
         }
 
-        return (int) ans;
+        return (int) runningAns;
     }
 
-    void apply(int node, int l, int r, long d) {
-        long len = r - l + 1L;
+    private void apply(int node, int start, int end, long val, long[] sum, long[] sumSquares, long[] lazy) {
+        long len = end - start + 1;
+        
+        // Expansion: (a + val)^2 = a^2 + 2*a*val + val^2 * len
+        long doubleValSum = (2 * val % MOD) * sum[node] % MOD;
+        long squareValLen = ((val * val) % MOD) * len % MOD;
 
-        sq[node] = (sq[node] + 2 * d * sum[node]
-                  + d * d % MOD * len) % MOD;
-        sum[node] = (sum[node] + d * len) % MOD;
-        lazy[node] += d;
+        sumSquares[node] = (sumSquares[node] + doubleValSum + squareValLen) % MOD;
+        sum[node] = (sum[node] + val * len) % MOD;
+        lazy[node] = (lazy[node] + val) % MOD;
     }
 
-    void push(int node, int l, int r) {
-        if (lazy[node] == 0 || l == r) return;
+    private void push(int node, int start, int end, long[] sum, long[] sumSquares, long[] lazy) {
+        if (lazy[node] != 0) {
+            int mid = (start + end) >> 1;
+            int leftChild = node << 1;
+            int rightChild = leftChild | 1;
+            long lz = lazy[node];
 
-        int mid = (l + r) / 2;
-        long d = lazy[node];
-
-        apply(node * 2, l, mid, d);
-        apply(node * 2 + 1, mid + 1, r, d);
-        lazy[node] = 0;
+            apply(leftChild, start, mid, lz, sum, sumSquares, lazy);
+            apply(rightChild, mid + 1, end, lz, sum, sumSquares, lazy);
+            lazy[node] = 0;
+        }
     }
 
-    void update(int node, int l, int r, int ql, int qr) {
-        if (ql <= l && r <= qr) {
-            apply(node, l, r, 1);
+    private void update(int node, int start, int end, int l, int r, long val, long[] sum, long[] sumSquares, long[] lazy) {
+        if (l <= start && end <= r) {
+            apply(node, start, end, val, sum, sumSquares, lazy);
             return;
         }
+        
+        push(node, start, end, sum, sumSquares, lazy);
+        int mid = (start + end) >> 1;
+        int leftChild = node << 1;
+        int rightChild = leftChild | 1;
 
-        push(node, l, r);
-        int mid = (l + r) / 2;
+        if (l <= mid) {
+            update(leftChild, start, mid, l, r, val, sum, sumSquares, lazy);
+        }
+        if (r > mid) {
+            update(rightChild, mid + 1, end, l, r, val, sum, sumSquares, lazy);
+        }
 
-        if (ql <= mid)
-            update(node * 2, l, mid, ql, qr);
-
-        if (qr > mid)
-            update(node * 2 + 1, mid + 1, r, ql, qr);
-
-        sum[node] = (sum[node * 2] + sum[node * 2 + 1]) % MOD;
-        sq[node] = (sq[node * 2] + sq[node * 2 + 1]) % MOD;
+        sum[node] = (sum[leftChild] + sum[rightChild]) % MOD;
+        sumSquares[node] = (sumSquares[leftChild] + sumSquares[rightChild]) % MOD;
     }
 }
