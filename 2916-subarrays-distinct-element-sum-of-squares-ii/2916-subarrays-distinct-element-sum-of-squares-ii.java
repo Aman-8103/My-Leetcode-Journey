@@ -18,9 +18,7 @@ class Solution {
 
         for (int i = 0; i < n; i++) {
             int prev = last[nums[i]];
-
             update(1, 0, n - 1, prev + 1, i);
-
             ans = (ans + sq[1]) % MOD;
             last[nums[i]] = i;
         }
@@ -32,8 +30,7 @@ class Solution {
         long len = r - l + 1L;
 
         sq[node] = (sq[node] + 2 * d * sum[node]
-                    + d * d % MOD * len) % MOD;
-
+                  + d * d % MOD * len) % MOD;
         sum[node] = (sum[node] + d * len) % MOD;
         lazy[node] += d;
     }
@@ -46,7 +43,6 @@ class Solution {
 
         apply(node * 2, l, mid, d);
         apply(node * 2 + 1, mid + 1, r, d);
-
         lazy[node] = 0;
     }
 
@@ -57,7 +53,6 @@ class Solution {
         }
 
         push(node, l, r);
-
         int mid = (l + r) / 2;
 
         if (ql <= mid)
