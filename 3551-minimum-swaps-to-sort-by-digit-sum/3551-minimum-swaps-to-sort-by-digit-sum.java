@@ -4,42 +4,46 @@ import java.util.*;
 class Solution {
     public int minSwaps(int[] nums) {
         int n = nums.length;
-        int[][] a = new int[n][2];
+        int[][] arr = new int[n][3];
 
         for (int i = 0; i < n; i++) {
-            a[i][0] = nums[i];
-            a[i][1] = i;
+            arr[i][0] = sum(nums[i]);
+            arr[i][1] = nums[i];
+            arr[i][2] = i;
         }
 
-        Arrays.sort(a, (x, y) -> {
-            int s1 = sum(x[0]), s2 = sum(y[0]);
-            if (s1 != s2) return Integer.compare(s1, s2);
-            return Integer.compare(x[0], y[0]);
+        Arrays.sort(arr, (x, y) -> {
+            if (x[0] != y[0])
+                return Integer.compare(x[0], y[0]);
+            return Integer.compare(x[1], y[1]);
         });
 
-        boolean[] vis = new boolean[n];
+        boolean[] visited = new boolean[n];
         int swaps = 0;
 
         for (int i = 0; i < n; i++) {
-            if (vis[i]) continue;
+            if (visited[i] || arr[i][2] == i)
+                continue;
 
-            int j = i, size = 0;
+            int j = i;
+            int cycleSize = 0;
 
-            while (!vis[j]) {
-                vis[j] = true;
-                j = a[j][1];
-                size++;
+            while (!visited[j]) {
+                visited[j] = true;
+                j = arr[j][2];
+                cycleSize++;
             }
-            if (size > 1) swaps += size - 1;
+            swaps += cycleSize - 1;
         }
+
         return swaps;
     }
 
-    private int sum(int x) {
+    public int sum(int num) {
         int s = 0;
-        while (x > 0) {
-            s += x % 10;
-            x /= 10;
+        while (num > 0) {
+            s += num % 10;
+            num /= 10;
         }
         return s;
     }
