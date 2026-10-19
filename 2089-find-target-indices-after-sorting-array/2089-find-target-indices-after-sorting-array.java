@@ -1,6 +1,5 @@
 class Solution {
     public List<Integer> targetIndices(int[] arr, int target) {
-        int n=arr.length;
         int smallcount=0;
         int targetcount=0;
         for(int i:arr){
