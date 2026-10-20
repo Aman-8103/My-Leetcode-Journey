@@ -1,52 +1,44 @@
 class Solution {
-    public int sortableIntegers(int[] nums) {
+    public boolean check(int[] nums, int len) {
         int n = nums.length;
-        int totalSum = 0;
-
-        for (int k = 1; k <= n; k++) {
-            if (n % k != 0) continue;
-            
-            if (isSortable(nums, n, k)) {
-                totalSum += k;
-            }
-        }
+        int minn = 0;
         
-        return totalSum;
-    }
-
-    private boolean isSortable(int[] nums, int n, int k) {
-        int prevMax = Integer.MIN_VALUE;
-        
-        for (int i = 0; i < n; i += k) {
-            // Find breaks in monotonicity inside the block of size k
-            int drops = 0;
-            int minVal = Integer.MAX_VALUE;
-            int maxVal = Integer.MIN_VALUE;
+        for (int i = 0; i < n; i += len) {
+            if (nums[i] < minn) return false;
             
-            for (int j = 0; j < k; j++) {
-                int curr = nums[i + j];
-                minVal = Math.min(minVal, curr);
-                maxVal = Math.max(maxVal, curr);
+            int maxx = nums[i];
+            boolean point = false;
+            
+            for (int j = i + 1; j < i + len; j++) {
+                if (nums[j] < minn) return false;
                 
-                int next = nums[i + (j + 1) % k];
-                if (curr > next) {
-                    drops++;
+                if (nums[j - 1] > nums[j]) {
+                    if (point) return false;
+                    point = true;
                 }
+                
+                maxx = Math.max(maxx, nums[j]);
             }
             
-            // A cyclically rotatable block can have at most 1 drop
-            if (drops > 1) {
-                return false;
+            if (point) {
+                if (nums[i] < nums[i + len - 1]) return false;
             }
             
-            // Current block's minimum must be >= previous block's maximum
-            if (minVal < prevMax) {
-                return false;
-            }
-            
-            prevMax = maxVal;
+            minn = maxx;
         }
         
         return true;
+    }
+    
+    public int sortableIntegers(int[] nums) {
+        int n = nums.length;
+        int ans = 0;
+        
+        for (int k = 1; k <= n; k++) {
+            if (n % k != 0) continue;
+            if (check(nums, k)) ans += k;
+        }
+        
+        return ans;
     }
 }
