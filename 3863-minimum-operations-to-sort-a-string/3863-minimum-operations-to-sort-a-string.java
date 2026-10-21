@@ -4,16 +4,23 @@ class Solution {
         char min='z',max='a';
         boolean sorted=true;
 
-        for(int i=0;i<n;i++){
-            char c=s.charAt(i);
-            min=(char)Math.min(min,c);
-            max=(char)Math.max(max,c);
-            if(i>0 && c<s.charAt(i-1)) sorted=false;
+        for(int i=1;i<n;i++){ //checking for sorted
+            if(s.charAt(i)<s.charAt(i-1)){
+                sorted=false;
+                break;
+            }
         }
 
         if(sorted) return 0; //case:1
         if(n==2) return -1; //case:2
+
+        for(char c:s.toCharArray()){
+            min=(char)Math.min(min,c);
+            max=(char)Math.max(max,c);
+        }
+
         if(s.charAt(0)==min || s.charAt(n-1)==max) return 1; //case:3
+        
         for(int i=1;i<n-1;i++){ //case:4
             if(s.charAt(i)==min || s.charAt(i)==max) return 2;
         }
