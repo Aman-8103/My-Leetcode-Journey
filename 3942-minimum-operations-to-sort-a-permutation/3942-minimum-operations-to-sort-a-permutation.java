@@ -1,18 +1,48 @@
+
 class Solution {
     public int minOperations(int[] nums) {
-        int n = nums.length, zero = 0, f = 1, b = 1;
-        for (int i = 0; i < n; i++) if (nums[i] == 0) zero = i;
-        
-        for (int i = 0; i < n; i++) {
-            if (nums[(zero + i) % n] != i) f = 0;
-            if (nums[(zero - i + n) % n] != i) b = 0;
+        int n = nums.length;
+
+        if (n == 1) return 0;
+
+        // Check increasing order
+        int dec = -1;
+
+        for (int i = 1; i < n; i++) {
+            if (nums[i] != nums[i - 1] + 1) {
+                if (dec != -1) {
+                    dec = n + 1;
+                    break;
+                }
+                dec = i;
+            }
         }
-        
-        if (f == 0 && b == 0) return -1;
-        
-        int ans = Integer.MAX_VALUE;
-        if (f == 1) ans = Math.min(zero, n - zero + 2);
-        if (b == 1) ans = Math.min(ans, Math.min(zero + 2, n - zero));
-        return ans;
+
+        if (dec == -1) return 0;
+
+        if (dec < n) {
+            return Math.min(dec, 2 + (n - dec));
+        }
+
+        // Check decreasing order
+        int inc = -1;
+
+        for (int i = 1; i < n; i++) {
+            if (nums[i] != nums[i - 1] - 1) {
+                if (inc != -1) {
+                    inc = n + 1;
+                    break;
+                }
+                inc = i;
+            }
+        }
+
+        if (inc == -1) return 1;
+
+        if (inc < n) {
+            return Math.min(inc, n - inc) + 1;
+        }
+
+        return -1;
     }
 }
