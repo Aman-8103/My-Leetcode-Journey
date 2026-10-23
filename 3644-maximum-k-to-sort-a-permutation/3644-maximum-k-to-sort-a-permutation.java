@@ -1,15 +1,16 @@
 class Solution {
     public int sortPermutation(int[] arr) {
-        int n=arr.length;
         int max=-1;
-        boolean sorted=true;
-
-        for(int i=0;i<n;i++){
+        for(int i=0;i<arr.length;i++){
             if(arr[i] != i){
-                max&=arr[i];
-                sorted=false;
+                if(max==-1){
+                    max=arr[i];
+                }else{
+                    max&=arr[i];
+                }
             }
         }
-        return sorted?0:max;
+        return max==-1?0:max;
+        
     }
 }
