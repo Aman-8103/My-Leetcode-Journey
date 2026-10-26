@@ -2,35 +2,31 @@ class Solution {
     public int countIslands(int[][] grid, int k) {
         int m = grid.length;
         int n = grid[0].length;
-        boolean[][] visited = new boolean[m][n];
         int count = 0;
 
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                if (grid[i][j] > 0 && !visited[i][j]) {
-                    long sum = dfs(grid, visited, i, j);
-                    if (sum % k == 0) {
+                if (grid[i][j] > 0) {
+                    // Accumulate sum and destroy island values in-place
+                    long totalSum = dfs(grid, i, j, m, n);
+                    if (totalSum % k == 0) {
                         count++;
                     }
                 }
             }
         }
-
         return count;
     }
 
-    private long dfs(int[][] grid, boolean[][] visited, int r, int c) {
-        if (r < 0 || r >= grid.length || c < 0 || c >= grid[0].length || grid[r][c] == 0 || visited[r][c]) {
-            return 0;
-        }
-
-        visited[r][c] = true;
+    private long dfs(int[][] grid, int r, int c, int m, int n) {
         long sum = grid[r][c];
+        grid[r][c] = 0; // Mark as visited in-place
 
-        sum += dfs(grid, visited, r + 1, c);
-        sum += dfs(grid, visited, r - 1, c);
-        sum += dfs(grid, visited, r, c + 1);
-        sum += dfs(grid, visited, r, c - 1);
+        // Check bounds before diving deeper to minimize method invocation overhead
+        if (r + 1 < m && grid[r + 1][c] > 0) sum += dfs(grid, r + 1, c, m, n);
+        if (r - 1 >= 0 && grid[r - 1][c] > 0) sum += dfs(grid, r - 1, c, m, n);
+        if (c + 1 < n && grid[r][c + 1] > 0) sum += dfs(grid, r, c + 1, m, n);
+        if (c - 1 >= 0 && grid[r][c - 1] > 0) sum += dfs(grid, r, c - 1, m, n);
 
         return sum;
     }
