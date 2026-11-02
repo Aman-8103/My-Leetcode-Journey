@@ -9,6 +9,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0050-powx-n](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0050-powx-n) |
 | [0069-sqrtx](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0069-sqrtx) |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0453-minimum-moves-to-equal-array-elements) |
+| [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0462-minimum-moves-to-equal-array-elements-ii) |
 | [0486-predict-the-winner](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0486-predict-the-winner) |
 | [0836-rectangle-overlap](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0836-rectangle-overlap) |
 | [0877-stone-game](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0877-stone-game) |
@@ -133,6 +134,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [0215-kth-largest-element-in-an-array](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0215-kth-largest-element-in-an-array) |
 | [0455-assign-cookies](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0455-assign-cookies) |
+| [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0462-minimum-moves-to-equal-array-elements-ii) |
 | [0645-set-mismatch](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0645-set-mismatch) |
 | [1096-brace-expansion-ii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1096-brace-expansion-ii) |
 | [1365-how-many-numbers-are-smaller-than-the-current-number](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1365-how-many-numbers-are-smaller-than-the-current-number) |
@@ -171,6 +173,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0448-find-all-numbers-disappeared-in-an-array](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0448-find-all-numbers-disappeared-in-an-array) |
 | [0453-minimum-moves-to-equal-array-elements](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0453-minimum-moves-to-equal-array-elements) |
 | [0455-assign-cookies](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0455-assign-cookies) |
+| [0462-minimum-moves-to-equal-array-elements-ii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0462-minimum-moves-to-equal-array-elements-ii) |
 | [0485-max-consecutive-ones](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0485-max-consecutive-ones) |
 | [0486-predict-the-winner](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0486-predict-the-winner) |
 | [0540-single-element-in-a-sorted-array](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0540-single-element-in-a-sorted-array) |
