@@ -1,19 +1,17 @@
-public class Solution {
+class Solution {
     public int findTheDistanceValue(int[] arr1, int[] arr2, int d) {
-        int distanceValue = 0;
+        int distance=0;
         
-        for (int i = 0; i < arr1.length; i++) {
-            boolean isValid = true;
-            for (int j = 0; j < arr2.length; j++) {
-                if (Math.abs(arr1[i] - arr2[j]) <= d) {
-                    isValid = false;
+        for(int i=0;i<arr1.length;i++){
+            boolean isValid=true;
+            for(int j=0;j<arr2.length;j++){
+                if(Math.abs(arr1[i]-arr2[j])<=d){
+                    isValid=false;
                     break;
                 }
             }
-            if (isValid) {
-                distanceValue++;
-            }
+            if(isValid) distance++;
         }
-        return distanceValue;
+        return distance;
     }
 }
