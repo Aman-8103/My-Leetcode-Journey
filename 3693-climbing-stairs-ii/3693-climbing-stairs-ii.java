@@ -1,20 +1,16 @@
-import java.util.Arrays;
-
 class Solution {
     public int climbStairs(int n, int[] costs) {
-        int[] dp = new int[n + 1];
-        Arrays.fill(dp, Integer.MAX_VALUE / 2);
-        dp[0] = 0;
+        int prev3 = 1_000_000_000;
+        int prev2 = 1_000_000_000;
+        int prev1 = 0;
 
-        for (int i = 1; i <= n; i++) {
-            int stepCost = costs[i - 1];
-            // Check valid previous steps: i-1, i-2, and i-3
-            for (int j = Math.max(0, i - 3); j < i; j++) {
-                int jumpCost = (i - j) * (i - j);
-                dp[i] = Math.min(dp[i], dp[j] + stepCost + jumpCost);
-            }
+        for (int i = 0; i < n; i++) {
+            int curr = costs[i] + Math.min(prev1 + 1, Math.min(prev2 + 4, prev3 + 9));
+            prev3 = prev2;
+            prev2 = prev1;
+            prev1 = curr;
         }
 
-        return dp[n];
+        return prev1;
     }
 }
