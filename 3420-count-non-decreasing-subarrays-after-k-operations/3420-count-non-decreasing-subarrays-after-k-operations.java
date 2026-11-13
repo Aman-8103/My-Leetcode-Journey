@@ -1,36 +1,40 @@
-import java.util.ArrayDeque;
-import java.util.Deque;
-
 class Solution {
     public long countNonDecreasingSubarrays(int[] nums, long k) {
         int n = nums.length;
         long ans = 0;
         long cost = 0;
         
-        // Store indices of nums in a monotonic stack/deque
-        Deque<Integer> dq = new ArrayDeque<>();
+        // Primitive array acting as a monotonic deque (avoids Integer autoboxing)
+        int[] dq = new int[n];
+        int head = 0; // Points to the front (largest element's index)
+        int tail = 0; // Points to the next insertion slot at the back
+        
         int j = n - 1;
         
-        // Traverse from right to left
         for (int i = n - 1; i >= 0; i--) {
             int num = nums[i];
-            while (!dq.isEmpty() && nums[dq.peekLast()] < num) {
-                int l = dq.pollLast();
-                int r = dq.isEmpty() ? j + 1 : dq.peekLast();
+            
+            // Pop smaller elements from the back and accumulate cost
+            while (head < tail && nums[dq[tail - 1]] < num) {
+                int l = dq[--tail];
+                int r = (head == tail) ? j + 1 : dq[tail - 1];
                 cost += (long) (r - l) * (num - nums[l]);
             }
-            dq.addLast(i);
+            dq[tail++] = i;
             
-            // Shrink the window from the right if cost exceeds k
+            // Shrink window from the right if total cost exceeds k
             while (cost > k) {
-                cost -= nums[dq.peekFirst()] - nums[j];
-                if (dq.peekFirst() == j) {
-                    dq.pollFirst();
+                int frontIdx = dq[head];
+                cost -= nums[frontIdx] - nums[j];
+                if (frontIdx == j) {
+                    head++;
                 }
                 j--;
             }
+            
             ans += (j - i + 1);
         }
+        
         return ans;
     }
 }
