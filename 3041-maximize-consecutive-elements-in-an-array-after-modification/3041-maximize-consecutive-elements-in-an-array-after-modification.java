@@ -1,25 +1,27 @@
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 
 class Solution {
     public int maxSelectedElements(int[] nums) {
-        // Sort the array to process elements in increasing order
         Arrays.sort(nums);
         
-        // dp maps a value `x` to the max length of a consecutive sequence ending at `x`
-        Map<Integer, Integer> dp = new HashMap<>();
+        // Size the DP array based on the largest element (nums[n - 1] + 2)
+        int maxVal = nums[nums.length - 1];
+        int[] dp = new int[maxVal + 2];
+        
         int maxConsecutive = 0;
 
         for (int num : nums) {
-            // Option 1: Increment `num` to `num + 1` (extends sequence ending at `num`)
-            dp.put(num + 1, dp.getOrDefault(num, 0) + 1);
+            // Option 1: Increment num -> num + 1
+            int incLen = dp[num] + 1;
+            dp[num + 1] = incLen;
             
-            // Option 2: Keep `num` as is (extends sequence ending at `num - 1`)
-            dp.put(num, dp.getOrDefault(num - 1, 0) + 1);
+            // Option 2: Keep num as is
+            int keepLen = dp[num - 1] + 1;
+            dp[num] = keepLen;
             
-            // Track the overall maximum length found so far
-            maxConsecutive = Math.max(maxConsecutive, Math.max(dp.get(num), dp.get(num + 1)));
+            // Track maximum inline without extra array lookups
+            if (incLen > maxConsecutive) maxConsecutive = incLen;
+            if (keepLen > maxConsecutive) maxConsecutive = keepLen;
         }
 
         return maxConsecutive;
