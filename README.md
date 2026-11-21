@@ -626,4 +626,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3420-count-non-decreasing-subarrays-after-k-operations](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/3420-count-non-decreasing-subarrays-after-k-operations) |
+## Database
+|  |
+| ------- |
+| [0176-second-highest-salary](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/0176-second-highest-salary) |
 <!---LeetCode Topics End-->
