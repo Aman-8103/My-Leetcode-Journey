@@ -1,0 +1,8 @@
+# Write your MySQL query statement below
+WITH RAN AS(
+    SELECT SCORE,
+    DENSE_RANK() OVER(ORDER BY SCORE DESC) AS RNK
+    FROM SCORES
+)
+SELECT SCORE AS score,RNK AS 'rank'
+FROM RAN;
