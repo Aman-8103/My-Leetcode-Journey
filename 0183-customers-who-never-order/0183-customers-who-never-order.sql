@@ -1,0 +1,5 @@
+# Write your MySQL query statement below
+SELECT C.NAME AS Customers
+FROM CUSTOMERS C
+LEFT JOIN ORDERS O ON C.ID=O.CUSTOMERID
+WHERE O.ID IS NULL;
