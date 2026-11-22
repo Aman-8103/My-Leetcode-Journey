@@ -97,6 +97,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1903-largest-odd-number-in-string](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1903-largest-odd-number-in-string) |
 | [1927-sum-game](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1927-sum-game) |
 | [2029-stone-game-ix](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2029-stone-game-ix) |
+| [2078-two-furthest-houses-with-different-colors](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2078-two-furthest-houses-with-different-colors) |
 | [2091-removing-minimum-and-maximum-from-array](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2091-removing-minimum-and-maximum-from-array) |
 | [2333-minimum-sum-of-squared-difference](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2333-minimum-sum-of-squared-difference) |
 | [2472-maximum-number-of-non-overlapping-palindrome-substrings](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2472-maximum-number-of-non-overlapping-palindrome-substrings) |
@@ -220,6 +221,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [1882-process-tasks-using-servers](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1882-process-tasks-using-servers) |
 | [1929-concatenation-of-array](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1929-concatenation-of-array) |
 | [2029-stone-game-ix](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2029-stone-game-ix) |
+| [2078-two-furthest-houses-with-different-colors](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2078-two-furthest-houses-with-different-colors) |
 | [2089-find-target-indices-after-sorting-array](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2089-find-target-indices-after-sorting-array) |
 | [2091-removing-minimum-and-maximum-from-array](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2091-removing-minimum-and-maximum-from-array) |
 | [2213-longest-substring-of-one-repeating-character](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2213-longest-substring-of-one-repeating-character) |
