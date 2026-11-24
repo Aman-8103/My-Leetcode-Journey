@@ -74,6 +74,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2243-calculate-digit-sum-of-a-string](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2243-calculate-digit-sum-of-a-string) |
 | [2409-count-days-spent-together](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2409-count-days-spent-together) |
 | [2472-maximum-number-of-non-overlapping-palindrome-substrings](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2472-maximum-number-of-non-overlapping-palindrome-substrings) |
+| [2586-count-the-number-of-vowel-strings-in-range](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2586-count-the-number-of-vowel-strings-in-range) |
 | [2904-shortest-and-lexicographically-smallest-beautiful-string](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2904-shortest-and-lexicographically-smallest-beautiful-string) |
 | [2911-minimum-changes-to-make-k-semi-palindromes](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2911-minimum-changes-to-make-k-semi-palindromes) |
 | [2914-minimum-number-of-changes-to-make-binary-string-beautiful](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2914-minimum-number-of-changes-to-make-binary-string-beautiful) |
@@ -173,6 +174,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | ------- |
 | [1267-count-servers-that-communicate](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/1267-count-servers-that-communicate) |
 | [2029-stone-game-ix](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2029-stone-game-ix) |
+| [2586-count-the-number-of-vowel-strings-in-range](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2586-count-the-number-of-vowel-strings-in-range) |
 | [3016-minimum-number-of-pushes-to-type-word-ii](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/3016-minimum-number-of-pushes-to-type-word-ii) |
 | [3720-lexicographically-smallest-permutation-greater-than-target](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/3720-lexicographically-smallest-permutation-greater-than-target) |
 ## Array
@@ -234,6 +236,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [2333-minimum-sum-of-squared-difference](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2333-minimum-sum-of-squared-difference) |
 | [2530-maximal-score-after-applying-k-operations](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2530-maximal-score-after-applying-k-operations) |
 | [2567-minimum-score-by-changing-two-elements](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2567-minimum-score-by-changing-two-elements) |
+| [2586-count-the-number-of-vowel-strings-in-range](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2586-count-the-number-of-vowel-strings-in-range) |
 | [2747-count-zero-request-servers](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2747-count-zero-request-servers) |
 | [2778-sum-of-squares-of-special-elements](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2778-sum-of-squares-of-special-elements) |
 | [2897-apply-operations-on-array-to-maximize-sum-of-squares](https://github.com/Aman-8103/My-Leetcode-Journey/tree/master/2897-apply-operations-on-array-to-maximize-sum-of-squares) |
